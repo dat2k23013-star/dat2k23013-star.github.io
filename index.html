@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thầy Trịnh Đình Đạt – Dạy kèm Toán lớp 6–9, ôn thi vào 10 | Quảng Bị, Hà Nội</title>
+<meta name="description" content="Thầy Trịnh Đình Đạt, giáo viên Toán THCS Quảng Bị 1. Dạy kèm Toán lớp 6–9, ôn thi vào 10. Học trực tiếp tại Thôn Tân Long, xã Quảng Bị, Hà Nội hoặc 1-1 online. Buổi đầu học thử miễn phí. Zalo 0348754851.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Thầy Trịnh Đình Đạt – Dạy kèm Toán lớp 6–9, ôn thi vào 10">
+<meta property="og:description" content="Lớp nhóm trực tiếp tại xã Quảng Bị, kèm 1-1 trực tiếp hoặc online. Buổi đầu học thử miễn phí – nhắn Zalo 0348754851.">
+<meta name="theme-color" content="#1f5c45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Be+Vietnam+Pro:wght@400;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbf9f1;
+    --grid:rgba(52,120,170,.10);
+    --grid-strong:rgba(52,120,170,.18);
+    --ink:#1f2a2e;
+    --muted:#4a565b;
+    --chalk:#1f5c45;      /* xanh bảng phấn đậm */
+    --chalk-soft:#d9efe3;
+    --sun:#ffe27a;        /* vàng giấy note */
+    --sun-soft:#fff3c4;
+    --coral:#f28b74;      /* san hô – chỉ dùng trang trí */
+    --coral-ink:#a83a26;  /* san hô đậm – dùng cho chữ */
+    --coral-soft:#ffe1d8;
+    --zalo:#0068ff;
+    --zalo-dark:#0050c4;
+    --head:"Itim","Patrick Hand","Comic Sans MS","Segoe Print",cursive;
+    --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.65;
+    color:var(--ink);
+    background-color:var(--paper);
+    /* giấy kẻ ô vở */
+    background-image:
+      linear-gradient(var(--grid-strong) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid-strong) 1px,transparent 1px),
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:96px 96px,96px 96px,24px 24px,24px 24px;
+    padding-bottom:96px; /* chừa chỗ cho nút Zalo nổi */
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:var(--zalo-dark)}
+  .wrap{width:100%;max-width:960px;margin:0 auto;padding:0 18px}
+  section{position:relative;padding:44px 0 28px}
+
+  /* ---------- Tiêu đề viết tay ---------- */
+  h1,h2,h3{font-family:var(--head);font-weight:400;line-height:1.2;margin:0}
+  h2{
+    font-size:2rem;color:var(--chalk);
+    display:inline-block;position:relative;isolation:isolate;margin-bottom:18px;padding-right:6px;
+  }
+  h2::after{ /* gạch chân như bút dạ */
+    content:"";position:absolute;left:-4px;right:-4px;bottom:2px;height:12px;
+    background:var(--sun);opacity:.75;z-index:-1;border-radius:6px;transform:rotate(-1deg);
+  }
+  .sec-label{
+    display:block;font-family:var(--head);font-size:1.05rem;color:var(--coral-ink);margin-bottom:2px;
+  }
+  h3{font-size:1.45rem;color:var(--ink);margin-bottom:6px}
+  p{margin:0 0 12px}
+
+  /* ---------- Nút ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    min-height:52px;padding:12px 24px;border-radius:14px;
+    font-family:var(--body);font-weight:700;font-size:1.08rem;text-decoration:none;
+    background:var(--zalo);color:#fff;border:2.5px solid var(--ink);
+    box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s,background .12s;
+  }
+  .btn:hover{background:var(--zalo-dark)}
+  .btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+  .btn:focus-visible{outline:3px solid var(--coral-ink);outline-offset:3px}
+  .btn svg{width:24px;height:24px;flex:none}
+  .btn-big{width:100%;font-size:1.15rem;min-height:58px}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:36px 0 40px;overflow:hidden}
+  .hero .wrap{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+  .avatar{
+    position:relative;width:148px;height:148px;border-radius:50%;
+    background:var(--chalk-soft);border:3px solid var(--chalk);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--head);font-size:5rem;color:var(--chalk);line-height:1;
+    box-shadow:6px 6px 0 var(--sun);
+  }
+  .avatar .ring{position:absolute;inset:-14px;width:calc(100% + 28px);height:calc(100% + 28px);pointer-events:none}
+  .hello{font-family:var(--head);font-size:1.3rem;color:var(--coral-ink);margin:6px 0 -6px}
+  .hero h1{font-size:2.15rem;color:var(--chalk)}
+  .tagline{font-size:1.1rem;color:var(--ink);max-width:34em;margin:0}
+  .tagline strong{background:linear-gradient(transparent 60%,var(--sun-soft) 60%)}
+  .free-tag{
+    display:inline-block;font-family:var(--head);font-size:1.3rem;color:var(--ink);
+    background:var(--sun);padding:8px 18px;border-radius:4px;transform:rotate(-2deg);
+    box-shadow:2px 3px 0 rgba(0,0,0,.12);position:relative;
+  }
+  .free-tag::before{ /* băng dính */
+    content:"";position:absolute;top:-9px;left:50%;width:56px;height:16px;margin-left:-28px;
+    background:rgba(255,255,255,.65);border:1px dashed rgba(0,0,0,.15);transform:rotate(3deg);
+  }
+  .hero .btn{width:100%;max-width:360px}
+
+  /* họa tiết trôi nổi */
+  .deco{position:absolute;pointer-events:none;user-select:none;font-family:var(--head);color:var(--chalk);opacity:.28;line-height:1}
+  .d1{top:6px;left:4px;font-size:2.4rem;transform:rotate(-12deg)}
+  .d2{top:18px;right:8px;font-size:2rem;transform:rotate(10deg);color:var(--coral-ink)}
+  .d3{top:150px;left:2px;font-size:1.5rem;transform:rotate(-6deg);color:var(--coral-ink)}
+  .d4{top:160px;right:0;font-size:1.6rem;transform:rotate(8deg)}
+
+  /* ---------- Thẻ giấy note ---------- */
+  .note{
+    position:relative;background:#fff;border:2px solid var(--ink);border-radius:6px;
+    padding:20px 18px 18px;box-shadow:5px 5px 0 rgba(31,42,46,.14);
+  }
+  .note.yellow{background:var(--sun-soft)}
+  .note.green{background:var(--chalk-soft)}
+  .note.coral{background:var(--coral-soft)}
+  .tilt-l{transform:rotate(-1.2deg)}
+  .tilt-r{transform:rotate(1.2deg)}
+  .pin::before{ /* đinh ghim */
+    content:"";position:absolute;top:-9px;left:50%;margin-left:-9px;width:18px;height:18px;border-radius:50%;
+    background:var(--coral);border:2px solid var(--ink);box-shadow:1px 2px 0 rgba(0,0,0,.2);
+  }
+
+  /* ---------- Về thầy ---------- */
+  .about-list{list-style:none;margin:0;padding:0}
+  .about-list li{position:relative;padding-left:34px;margin-bottom:12px}
+  .about-list li::before{
+    content:"✓";position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;
+    background:var(--chalk);color:#fff;font-size:.85rem;font-weight:700;display:flex;align-items:center;justify-content:center;
+  }
+  .about-list li:last-child{margin-bottom:0}
+
+  /* ---------- Con số ---------- */
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:16px 14px}
+  .stat{text-align:center;padding:18px 10px 14px}
+  .stat:nth-child(1){transform:rotate(-1.5deg)}
+  .stat:nth-child(2){transform:rotate(1.2deg)}
+  .stat:nth-child(3){transform:rotate(1deg)}
+  .stat:nth-child(4){transform:rotate(-1.2deg)}
+  .stat .num{display:block;font-family:var(--head);font-size:2.6rem;line-height:1.1;color:var(--chalk)}
+  .stat .lbl{display:block;font-size:1rem;line-height:1.4;color:var(--ink)}
+  .stats-note{font-size:.95rem;color:var(--muted);margin-top:16px}
+
+  /* ---------- Thầy dạy gì ---------- */
+  .cards{display:grid;gap:22px}
+  .card-icon{width:52px;height:52px;margin-bottom:8px}
+
+  /* ---------- Hình thức ---------- */
+  .modes{display:grid;gap:22px}
+  .mode-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .mode-head svg{width:44px;height:44px;flex:none}
+  .mode-head h3{margin:0}
+  .addr{font-weight:700}
+
+  /* ---------- Học phí ---------- */
+  .prices{display:grid;gap:20px}
+  .price{display:flex;flex-direction:column;gap:2px}
+  .price .kind{font-family:var(--head);font-size:1.35rem;color:var(--ink)}
+  .price .where{font-size:.98rem;color:var(--muted)}
+  .price .amount{font-family:var(--head);font-size:2.3rem;line-height:1.15;color:var(--chalk);margin-top:4px}
+  .price .amount small{font-size:1.1rem;color:var(--ink)}
+  .price .extra{font-size:.98rem;color:var(--coral-ink);font-weight:600}
+  .trial{
+    margin-top:24px;text-align:center;font-family:var(--head);font-size:1.5rem;line-height:1.3;
+    border:2.5px dashed var(--coral-ink);border-radius:12px;padding:14px 12px;background:#fff;color:var(--coral-ink);
+  }
+
+  /* ---------- Lịch học ---------- */
+  .schedule{display:flex;gap:16px;align-items:flex-start}
+  .schedule svg{width:64px;height:64px;flex:none}
+  .schedule p:last-child{margin-bottom:0}
+
+  /* ---------- Liên hệ ---------- */
+  .contact{text-align:center}
+  .contact .note{padding:28px 20px 24px}
+  .contact h2{margin-bottom:10px}
+  .phone{
+    display:block;font-family:var(--head);font-size:2.3rem;letter-spacing:1px;color:var(--chalk);margin:8px 0 2px;
+  }
+  .contact .addr-line{font-size:1rem;color:var(--muted);margin:14px 0 0}
+
+  /* ---------- Chân trang ---------- */
+  footer{padding:28px 0 12px;text-align:center;font-size:.95rem;color:var(--muted)}
+  footer .eq{font-family:var(--head);font-size:1.1rem;color:var(--chalk);opacity:.6;display:block;margin-bottom:4px}
+
+  /* ---------- Thước kẻ ngăn cách ---------- */
+  .ruler{height:16px;margin:6px 0 0;opacity:.55;
+    background:
+      repeating-linear-gradient(90deg,var(--chalk) 0 2px,transparent 2px 12px) bottom/100% 8px no-repeat,
+      repeating-linear-gradient(90deg,var(--chalk) 0 2px,transparent 2px 60px) bottom/100% 16px no-repeat;
+    border-bottom:2px solid var(--chalk);
+  }
+
+  /* ---------- Nút Zalo nổi ---------- */
+  .float-zalo{
+    position:fixed;left:12px;right:12px;bottom:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;
+    display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:10px 18px;
+    background:var(--zalo);color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem;
+    border:2.5px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink);
+  }
+  .float-zalo:hover{background:var(--zalo-dark)}
+  .float-zalo:focus-visible{outline:3px solid var(--coral-ink);outline-offset:3px}
+  .float-zalo svg{width:26px;height:26px;flex:none}
+
+  /* ---------- Máy tính bảng / máy tính ---------- */
+  @media (min-width:640px){
+    .stats{grid-template-columns:repeat(4,1fr)}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .modes{grid-template-columns:1fr 1fr}
+    .prices{grid-template-columns:repeat(3,1fr)}
+    .contact .btn-big{width:auto;min-width:320px}
+  }
+  @media (min-width:768px){
+    body{font-size:18px}
+    section{padding:60px 0 32px}
+    h2{font-size:2.4rem}
+    .hero{padding:56px 0 52px}
+    .hero .wrap{flex-direction:row;text-align:left;gap:40px;align-items:center}
+    .hero-text{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+    .avatar{width:220px;height:220px;font-size:7.5rem;flex:none;order:2}
+    .hero h1{font-size:3.4rem}
+    .hero .btn{width:auto}
+    .d3{top:auto;bottom:0;left:40%}
+    .d4{top:auto;bottom:10px;right:28%}
+    .float-zalo{left:auto;right:24px;bottom:24px;padding:10px 22px;border-radius:999px}
+    body{padding-bottom:110px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- SVG dùng lại -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-zalo" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2C6.2 2 1.5 6 1.5 11c0 2.8 1.5 5.3 3.8 7l-.8 3.3c-.1.4.3.7.7.5l3.8-2c1 .3 2 .4 3 .4 5.8 0 10.5-4 10.5-9S17.8 2 12 2zm-4.9 11.6H4.6c-.4 0-.6-.4-.4-.7l2.4-3.4H4.9a.6.6 0 010-1.2h2.3c.4 0 .6.4.4.7l-2.4 3.4h1.9a.6.6 0 010 1.2zm3.9.1a.6.6 0 01-.6-.6v-.1a2 2 0 11.6-3.5.6.6 0 011.2.1v3.5a.6.6 0 01-.6.6h-.6zm-.6-1.2a.9.9 0 100-1.8.9.9 0 000 1.8zm3 .6a.6.6 0 01-1.2 0V8.6a.6.6 0 011.2 0v4.5zm2.8.6a2 2 0 110-4.1 2 2 0 010 4.1zm0-1.2a.9.9 0 100-1.8.9.9 0 000 1.8z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <!-- 1. HERO -->
+  <header class="hero" id="dau-trang">
+    <div class="wrap">
+      <span class="deco d1" aria-hidden="true">π</span>
+      <span class="deco d2" aria-hidden="true">√x</span>
+      <span class="deco d3" aria-hidden="true">x² + y²</span>
+      <span class="deco d4" aria-hidden="true">△ABC</span>
+
+      <div class="avatar" role="img" aria-label="Khung chờ ảnh chân dung của thầy Đạt">
+        <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="96" fill="none" stroke="#a83a26" stroke-width="2" stroke-dasharray="4 8" opacity=".6"/>
+          <!-- cung compa -->
+          <path d="M18 70 A88 88 0 0 1 70 14" fill="none" stroke="#1f5c45" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="3" fill="#1f5c45"/>
+        </svg>
+        Đ
+      </div>
+
+      <div class="hero-text">
+        <p class="hello">Xin chào phụ huynh và các con!</p>
+        <h1>Thầy Trịnh Đình Đạt</h1>
+        <p class="tagline">Giáo viên Toán THCS — <strong>dạy kèm lớp 6–9, ôn thi vào 10</strong></p>
+        <span class="free-tag">★ Học thử buổi đầu miễn phí</span>
+        <a class="btn" href="https://zalo.me/0348754851" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-zalo"/></svg>
+          Nhắn Zalo cho thầy
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap"><div class="ruler" aria-hidden="true"></div></div>
+
+  <!-- 2. VỀ THẦY -->
+  <section id="ve-thay" aria-labelledby="h-ve-thay">
+    <div class="wrap">
+      <span class="sec-label">Bài 1.</span>
+      <h2 id="h-ve-thay">Về thầy</h2>
+      <div class="note pin tilt-l">
+        <ul class="about-list">
+          <li>Giáo viên Toán <strong>Trường THCS Quảng Bị 1</strong>, xã Quảng Bị, Hà Nội.</li>
+          <li><strong>2 năm</strong> đứng lớp tại trường, cả 2 năm đều làm giáo viên chủ nhiệm (lớp 8 và lớp 6).</li>
+          <li>Đang học <strong>cao học ngành Lí luận và phương pháp dạy học bộ môn Toán</strong> tại Trường ĐH Giáo dục – ĐHQGHN.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CON SỐ -->
+  <section id="con-so" aria-labelledby="h-con-so">
+    <div class="wrap">
+      <span class="sec-label">Bài 2.</span>
+      <h2 id="h-con-so">Vài con số</h2>
+      <div class="stats">
+        <div class="note yellow stat"><span class="num">2</span><span class="lbl">năm dạy Toán ở trường</span></div>
+        <div class="note green stat"><span class="num">6</span><span class="lbl">lượt lớp Toán đã dạy ở trường</span></div>
+        <div class="note coral stat"><span class="num">3</span><span class="lbl">khối 6 – 7 – 8 đã dạy ở trường</span></div>
+        <div class="note stat"><span class="num">~20</span><span class="lbl">học sinh đang học thêm với thầy</span></div>
+      </div>
+      <p class="stats-note">* Số học sinh học thêm là con số ước lượng, gồm cả kèm riêng và lớp nhóm.</p>
+    </div>
+  </section>
+
+  <!-- 4. THẦY DẠY GÌ -->
+  <section id="day-gi" aria-labelledby="h-day-gi">
+    <div class="wrap">
+      <span class="sec-label">Bài 3.</span>
+      <h2 id="h-day-gi">Thầy dạy gì?</h2>
+      <div class="cards">
+        <article class="note yellow pin tilt-l">
+          <svg class="card-icon" viewBox="0 0 52 52" aria-hidden="true">
+            <path d="M6 44 L26 8 L46 44 Z" fill="#fff" stroke="#1f2a2e" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M26 8 L26 44" stroke="#a83a26" stroke-width="2" stroke-dasharray="3 3"/>
+            <rect x="26" y="38" width="6" height="6" fill="none" stroke="#a83a26" stroke-width="1.8"/>
+          </svg>
+          <h3>Toán THCS lớp 6–9</h3>
+          <p>Bám sát chương trình trên lớp, củng cố kiến thức nền và luyện đề ôn thi vào lớp 10.</p>
+        </article>
+        <article class="note green pin tilt-r">
+          <svg class="card-icon" viewBox="0 0 52 52" aria-hidden="true">
+            <circle cx="26" cy="26" r="19" fill="#fff" stroke="#1f2a2e" stroke-width="2.5"/>
+            <circle cx="26" cy="26" r="11" fill="none" stroke="#1f5c45" stroke-width="2.5"/>
+            <circle cx="26" cy="26" r="4" fill="#a83a26"/>
+          </svg>
+          <h3>Kèm 1-1</h3>
+          <p>Thầy tìm đúng chỗ con đang hổng để bù lại, đi theo tốc độ của riêng con.</p>
+        </article>
+        <article class="note coral pin tilt-l">
+          <svg class="card-icon" viewBox="0 0 52 52" aria-hidden="true">
+            <rect x="10" y="6" width="30" height="40" rx="3" fill="#fff" stroke="#1f2a2e" stroke-width="2.5"/>
+            <path d="M16 16h18M16 23h18M16 30h11" stroke="#1f5c45" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M40 30l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" fill="#ffe27a" stroke="#1f2a2e" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <h3>Tài liệu soạn riêng</h3>
+          <p>Thầy tự soạn tài liệu, phiếu bài tập cho học sinh, có dùng AI hỗ trợ để soạn nhanh và sát trình độ của con.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HÌNH THỨC & ĐỊA ĐIỂM -->
+  <section id="hinh-thuc" aria-labelledby="h-hinh-thuc">
+    <div class="wrap">
+      <span class="sec-label">Bài 4.</span>
+      <h2 id="h-hinh-thuc">Học ở đâu?</h2>
+      <div class="modes">
+        <div class="note tilt-r">
+          <div class="mode-head">
+            <svg viewBox="0 0 44 44" aria-hidden="true">
+              <path d="M6 22 L22 8 L38 22" fill="none" stroke="#1f2a2e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+              <rect x="11" y="20" width="22" height="18" fill="#ffe27a" stroke="#1f2a2e" stroke-width="2.5"/>
+              <rect x="19" y="27" width="6" height="11" fill="#fff" stroke="#1f2a2e" stroke-width="2"/>
+            </svg>
+            <h3>Trực tiếp tại nhà thầy</h3>
+          </div>
+          <p class="addr">Thôn Tân Long, xã Quảng Bị, Hà Nội</p>
+          <p>Nhận học sinh quanh khu vực xã Quảng Bị. Có cả lớp nhóm và kèm 1-1.</p>
+        </div>
+        <div class="note tilt-l">
+          <div class="mode-head">
+            <svg viewBox="0 0 44 44" aria-hidden="true">
+              <rect x="5" y="8" width="34" height="22" rx="2" fill="#d9efe3" stroke="#1f2a2e" stroke-width="2.5"/>
+              <path d="M2 36 H42" stroke="#1f2a2e" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10 25 L18 17 L24 22 L33 13" fill="none" stroke="#a83a26" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Online 1-1</h3>
+          </div>
+          <p class="addr">Qua Google Meet / Zoom</p>
+          <p>Không giới hạn khu vực. Học online chỉ dạy kèm 1-1 (không có lớp nhóm online).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HỌC PHÍ -->
+  <section id="hoc-phi" aria-labelledby="h-hoc-phi">
+    <div class="wrap">
+      <span class="sec-label">Bài 5.</span>
+      <h2 id="h-hoc-phi">Học phí</h2>
+      <div class="prices">
+        <div class="note yellow pin price tilt-l">
+          <span class="kind">Lớp nhóm</span>
+          <span class="where">Học trực tiếp tại nhà thầy</span>
+          <span class="amount">50.000đ <small>/buổi</small></span>
+        </div>
+        <div class="note green pin price tilt-r">
+          <span class="kind">Kèm 1-1 trực tiếp</span>
+          <span class="where">Học tại nhà thầy</span>
+          <span class="amount">300.000đ <small>/buổi</small></span>
+          <span class="extra">Có thể trao đổi thêm</span>
+        </div>
+        <div class="note coral pin price tilt-l">
+          <span class="kind">Gia sư 1-1 online</span>
+          <span class="where">Qua Google Meet / Zoom</span>
+          <span class="amount">250.000đ <small>/buổi</small></span>
+        </div>
+      </div>
+      <p class="trial">Buổi đầu học thử miễn phí ✓</p>
+    </div>
+  </section>
+
+  <!-- 7. LỊCH HỌC -->
+  <section id="lich-hoc" aria-labelledby="h-lich-hoc">
+    <div class="wrap">
+      <span class="sec-label">Bài 6.</span>
+      <h2 id="h-lich-hoc">Lịch học</h2>
+      <div class="note yellow schedule tilt-r">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="6" y="12" width="52" height="46" rx="4" fill="#fff" stroke="#1f2a2e" stroke-width="2.5"/>
+          <path d="M6 24 H58" stroke="#1f2a2e" stroke-width="2.5"/>
+          <path d="M18 6 V16 M46 6 V16" stroke="#1f2a2e" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 40 l7 7 l15 -15" fill="none" stroke="#1f5c45" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <p><strong>Lịch linh hoạt</strong> — nhắn Zalo để thầy xếp lịch phù hợp với con.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. LIÊN HỆ -->
+  <section id="lien-he" class="contact" aria-labelledby="h-lien-he">
+    <div class="wrap">
+      <div class="note pin">
+        <span class="sec-label">Đáp số:</span>
+        <h2 id="h-lien-he">Đăng ký học thử</h2>
+        <p>Phụ huynh nhắn Zalo cho thầy để trao đổi về việc học của con và đăng ký buổi học thử miễn phí.</p>
+        <a class="btn btn-big" href="https://zalo.me/0348754851" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-zalo"/></svg>
+          Nhắn Zalo cho thầy
+        </a>
+        <span class="phone">0348754851</span>
+        <span>(Zalo)</span>
+        <p class="addr-line">Địa chỉ: Thôn Tân Long, xã Quảng Bị, Hà Nội</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="eq" aria-hidden="true">a² + b² = c²</span>
+    © 2026 Thầy Trịnh Đình Đạt · Toán THCS Quảng Bị
+  </div>
+</footer>
+
+<a class="float-zalo" href="https://zalo.me/0348754851" target="_blank" rel="noopener" aria-label="Nhắn Zalo cho thầy Đạt: 0348754851">
+  <svg aria-hidden="true"><use href="#i-zalo"/></svg>
+  Nhắn Zalo · Học thử miễn phí
+</a>
+
+</body>
+</html>
